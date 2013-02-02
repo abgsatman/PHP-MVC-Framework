@@ -39,6 +39,13 @@ class HQ {
         
         return "<hr size=".$size." color=".$color.">";
     }
+    
+    //<div align=$align class=$class>$text</div>
+    public function div( $text, $align, $class ) {
+        
+        return "<div align=".$align." class=".$class.">".$text."</div>";
+        
+    }
 }
 
 ?>
