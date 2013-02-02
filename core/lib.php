@@ -37,7 +37,7 @@ class HQ {
     //HTML tag as <hr size=$size color=$color> 
     public function hr( $size, $color ) {
         
-        print "<hr size=".$size." color=".$color.">";
+        return "<hr size=".$size." color=".$color.">";
     }
 }
 
