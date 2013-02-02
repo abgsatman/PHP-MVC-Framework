@@ -23,6 +23,7 @@ class HQ {
         return $str;
     }
 
+    //$lineCount times <br> HTML tag
     public function br( $lineCount ) {
         
         if( !is_numeric( $lineCount ) || ( $lineCount<1 ) )
@@ -31,7 +32,12 @@ class HQ {
         for( $i=1; $i<=$lineCount; $i++) {
             print "<br>";
         }
-
+    }
+    
+    //HTML tag as <hr size=$size color=$color> 
+    public function hr( $size, $color ) {
+        
+        print "<hr size=".$size." color=".$color.">";
     }
 }
 
