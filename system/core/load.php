@@ -19,13 +19,21 @@
 
 class Load {
 	
-	public function view ( $file_name ) {
+	public function view ( $file_name, $data = NULL ) {
 		
+		if ( is_array ( $data ) ) {
+			
+			extract ( $data );	
+		}
 		include ( 'application/views/'.$file_name );
 	}
 	
-	public function model ( $filename ) {
+	public function model ( $filename, $data = NULL ) {
 		
+		if ( is_array ( $data ) ) {
+			
+			extract ( $data );	
+		}
 		include ( 'application/models/'.$filename );	
 	}
 }
