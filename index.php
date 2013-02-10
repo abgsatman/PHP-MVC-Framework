@@ -1,16 +1,8 @@
 <?php
+//including system's files
+require 'system/index.php';
 
-include("core/lib.php");
-
-$HTMLQuery = new HQ;
-
-print $HTMLQuery->label("Starting...");
-
-$HTMLQuery->br(4);
-print $HTMLQuery->hr(4, red);
-print $HTMLQuery->div("This is text for div html tag", "left");
-print $HTMLQuery->hr(4, red);
-
-print $HTMLQuery->label("Finished!");
-
+####### CONTROLLERS ARE HERE #######
+new myController;   				#require if you have got any classes about controllers
+####### CONTROLLERS ARE HERE #######
 ?>
