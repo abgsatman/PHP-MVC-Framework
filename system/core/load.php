@@ -19,14 +19,14 @@
 
 class Load {
 	
-	public function view( $file_name ) {
+	public function view ( $file_name ) {
 		
-		include( 'application/views/'.$file_name );
+		include ( 'application/views/'.$file_name );
 	}
 	
-	public function model( $filename ) {
+	public function model ( $filename ) {
 		
-		include( 'application/models/'.$filename );	
+		include ( 'application/models/'.$filename );	
 	}
 }
 ?>

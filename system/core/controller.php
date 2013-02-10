@@ -30,20 +30,20 @@ class CONTROLLER {
 	public function myIndex() {
 		
 		$url = @$_GET[ 'url' ];
-		$url = explode( '/', $url );
+		$url = explode ( '/', $url );
 		
-		foreach( $url as $urlItems ) {
+		foreach ( $url as $urlItems ) {
 			
-			if( $urlItems == NULL) {
-				$this->load->view( 'menu.php' );
-				$this->load->view( 'index.php' );
+			if ( $urlItems == NULL ) {
+				$this->load->view ( 'menu.php' );
+				$this->load->view ( 'index.php' );
 				exit();
 			}
 			else {
 			
-				foreach( get_class_methods( $this ) as $methods ) {
+				foreach ( get_class_methods ( $this ) as $methods ) {
 					
-					if($urlItems == $methods) {
+					if ($urlItems == $methods) {
 					
 						$this->$methods();
 					}

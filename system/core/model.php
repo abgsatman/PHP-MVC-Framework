@@ -19,13 +19,13 @@
 
 class MODEL extends CONTROLLER {
 	
-	public function __construct( $views = NULL ) {
+	public function __construct ( $views = NULL ) {
 		
 		parent::__construct();
 		
-		foreach($views as $viewsEach) {
+		foreach ( $views as $viewsEach ) {
 			
-			$this->load->view($viewsEach);
+			$this->load->view ( $viewsEach );
 			
 		}
 		
