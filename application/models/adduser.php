@@ -1,8 +1,11 @@
 <?php 
-$data = array(
+
+$data = array (
+
 	'adduser.php', 
 	'userlist.php'
+	
 );
 
-clone new MODEL($data); 
+clone new MODEL ( $data ); 
 ?>

@@ -4,16 +4,16 @@
 ##############################################################################
 
 //displaying errors
-ini_set( 'display_errors', 1);
+ini_set ( 'display_errors', 1);
 
-define( 'BASE_PATH',     	dirname( realpath( '../'.__FILE__ ) ) );
-define( 'APP_PATH',     	BASE_PATH.'application/' 			  );
-define( 'CONTROLLER_PATH',  APP_PATH.'controllers/' 			  );
-define( 'SYSTEM_PATH',   	BASE_PATH.'system/' 				  );
-define( 'CORE_PATH',     	SYSTEM_PATH.'core/' 				  );
-define( 'CONFIG_PATH',   	SYSTEM_PATH.'config/'                 );
-define( 'DATABASE_PATH', 	SYSTEM_PATH.'config/'                 );
-define( 'HTML_PATH', 	    SYSTEM_PATH.'html/'                   );
+define ( 'BASE_PATH',     	 dirname ( realpath( '../'.__FILE__ ) ) );
+define ( 'APP_PATH',     	 BASE_PATH.'application/' 			    );
+define ( 'CONTROLLER_PATH',  APP_PATH.'controllers/' 			    );
+define ( 'SYSTEM_PATH',   	 BASE_PATH.'system/' 				    );
+define ( 'CORE_PATH',     	 SYSTEM_PATH.'core/' 				    );
+define ( 'CONFIG_PATH',   	 SYSTEM_PATH.'config/'                  );
+define ( 'DATABASE_PATH', 	 SYSTEM_PATH.'config/'                  );
+define ( 'HTML_PATH', 	     SYSTEM_PATH.'html/'                    );
 
 //core folder's files 					        
 require CORE_PATH.'controller.php';
