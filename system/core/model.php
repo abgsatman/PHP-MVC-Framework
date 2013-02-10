@@ -23,13 +23,19 @@ class MODEL extends CONTROLLER {
 		
 		parent::__construct();
 		
-		foreach ( $views as $viewsEach ) {
+		if ( is_array ( $views ) ) {
+		
+			foreach ( $views as $viewsEach ) {
+				
+				$this->load->view ( $viewsEach );
+				
+			}
+		}
+		else {
 			
-			$this->load->view ( $viewsEach );
+			$this->load->view ( $views );
 			
 		}
-		
-		
 	}
 }
 ?>
