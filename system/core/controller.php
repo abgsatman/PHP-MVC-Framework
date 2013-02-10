@@ -39,11 +39,12 @@ class CONTROLLER {
 				$this->load->view ( 'index.php' );
 				exit();
 			}
+			
 			else {
 			
 				foreach ( get_class_methods ( $this ) as $methods ) {
 					
-					if ($urlItems == $methods) {
+					if ( $urlItems == $methods ) {
 					
 						$this->$methods();
 					}

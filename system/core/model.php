@@ -28,13 +28,12 @@ class MODEL extends CONTROLLER {
 			foreach ( $views as $viewsEach ) {
 				
 				$this->load->view ( $viewsEach );
-				
 			}
 		}
+		
 		else {
 			
 			$this->load->view ( $views );
-			
 		}
 	}
 }
